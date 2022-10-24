@@ -1,11 +1,7 @@
 import { useState } from 'react'
-import reactLogo from '@/assets/react.svg'
-import {test} from '@/utils/index.ts'
-import {test:test1} from '@/utils'
-// import viteSvg from '~/vite.svg'
-import  style from './App.module.scss'
+import reactLogo from './assets/react.svg'
+import './App.css'
 import { Button } from 'antd-mobile'
-
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,7 +25,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className={style.aaa}>
+      <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
       <Button>123</Button>
