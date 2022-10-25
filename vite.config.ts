@@ -11,7 +11,6 @@ export default defineConfig({
     // 配置别名
     alias: {
       '@': path.join(__dirname, './src'),
-      '@utils': path.join(__dirname, './src/utils')
     }
   },
   css: {

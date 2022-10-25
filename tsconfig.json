@@ -14,11 +14,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "baseUrl":"./",
-  "paths":{
-    "@utils/*":["./src/utils/*"] 
+    "jsx": "react-jsx",
+    "baseUrl": "./", //用于解析非相对模块名称的基目录
+    "paths": {  // 模块名到基于 baseUrl 的路径映射的列表
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
