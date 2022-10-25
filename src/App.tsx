@@ -1,6 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import reactLogo from '@/assets/react.svg'
+import {test} from '@/utils/index'
+import {test as test1} from '@/utils'
+// import viteSvg from '~/vite.svg'
+import  style from './App.module.scss'
 import { Button } from 'antd-mobile'
 
 function App() {
