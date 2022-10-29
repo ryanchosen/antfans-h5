@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import reactLogo from '@/assets/react.svg'
-import {test} from '@/utils/index'
-import {test as test1} from '@/utils'
+import { useState } from "react";
+import reactLogo from "@/assets/react.svg";
+import { test } from "@/utils/index";
+console.warn("🚀 调试 test", test);
 // import viteSvg from '~/vite.svg'
-import  style from './App.module.scss'
-import { Button } from 'antd-mobile'
-
+import  "./App.scss";
+import { Button } from "antd-mobile";
+import FixedBottom from "@/components/Global/FixedBottom";
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -28,12 +28,14 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className={style.aaa}>
+      <p className="aaa">
         Click on the Vite and React logos to learn more
       </p>
       <Button>123</Button>
+      <FixedBottom></FixedBottom>
+      <div className="test2">我的</div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

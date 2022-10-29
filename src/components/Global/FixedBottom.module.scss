@@ -1,0 +1,26 @@
+// 只需要写root就好
+.root {
+    // ---> .tsx中 className={style.root}
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+
+    .btn {
+        // ---> .tsx中 className={style.btn}
+        background-color: pink;
+    }
+    :global {
+        .btn {
+            // ---> .tsx中 className="btnTest"
+            background-color: red;
+        }
+    }
+}
+
+// 这里是真全局，加载该scss文件时，这里的全局样式能够覆盖外面的全局样式
+:global {
+    .test2 {
+        color: red;
+    }
+}

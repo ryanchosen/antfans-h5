@@ -11,7 +11,8 @@ export default defineConfig({
     // 配置别名
     alias: {
       '@': path.join(__dirname, './src'),
-    }
+    },
+    // extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   css: {
     preprocessorOptions: {
