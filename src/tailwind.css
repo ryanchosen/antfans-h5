@@ -1,0 +1,3 @@
+@tailwind base; /* 基础样式 */
+@tailwind components; /* 组件 */
+@tailwind utilities; /* 功能类样式 */

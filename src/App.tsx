@@ -1,9 +1,6 @@
 import { useState } from "react";
 import reactLogo from "@/assets/react.svg";
-import { test } from "@/utils/index";
-console.warn("🚀 调试 test", test);
-// import viteSvg from '~/vite.svg'
-import  "./App.scss";
+import "./App.scss";
 import { Button } from "antd-mobile";
 import FixedBottom from "@/components/Global/FixedBottom";
 function App() {
@@ -28,12 +25,20 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="aaa">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className="aaa">Click on the Vite and React logos to learn more</p>
       <Button>123</Button>
       <FixedBottom></FixedBottom>
       <div className="test2">我的</div>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+        <div className="shrink-0">
+          <img className="h-12 w-12" src={reactLogo} alt="ChitChat Logo" />
+        </div>
+        <div>
+          <div className="text-xl font-medium text-black">ChitChat</div>
+          <p className="text-slate-500">You have a new message!</p>
+        </div>
+      </div>
     </div>
   );
 }
